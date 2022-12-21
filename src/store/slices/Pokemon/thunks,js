@@ -1,0 +1,20 @@
+import { setPokemons, startLoadingPokemons } from "./pokemonSlice"
+
+
+// Funcion que regresa otra funcion o tarea asincrona
+export const getPokemons = ( page = 0 ) => {
+    // Esta funcion se manda a llamar con un argumento dispatch
+    // Como segundo argumento llamanos la fn getState para llamar todo el rootState
+    //Le coloca al return async para poder tener los beneficios del async y el await
+    return async ( dispatch, getState ) => {
+        dispatch( startLoadingPokemons() );
+
+        // TODO: Realizar peticion HTTP
+
+
+        // dispatch( setPokemons() )
+
+
+    }
+
+}
