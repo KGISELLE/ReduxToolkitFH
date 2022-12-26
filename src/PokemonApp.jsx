@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 // import { pokemonSlice } from "./store/slices/Pokemon/pokemonSlice";
 
-import { getPokemons } from "./store/slices/Pokemon/thunks,js";
+import { getPokemons } from "./store/slices/Pokemon/thunks.js";
 
 export const PokemonApp = () => {
 
