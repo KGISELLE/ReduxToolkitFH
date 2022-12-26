@@ -1,6 +1,6 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-export const todosApis = createApi({
+export const todosApi = createApi({
 
     reducerPath: 'todos',
 
@@ -14,8 +14,8 @@ export const todosApis = createApi({
             query: () => '/todos' //en este caso le estoy concateneando la ruta URL
         })
 
-    })
+    }),
 
 });
 
-export const { useGetTodosQuery } = todosApis;
+export const { useGetTodosQuery } = todosApi;
